@@ -1,0 +1,151 @@
+h1{
+    color:darkblue;
+    background-color:yellow;
+    text-align: center;
+    font-size: xx-large;
+    border: 5px solid;
+    border-color:green;
+    padding: 5px;
+    margin: 5px;
+    
+}
+#div{
+    border: 2px solid;
+    border-color: snow;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+body{
+    margin: 25px;
+    border: 5px solid;
+    border-color: black;
+    font-family:'Delius Unicase' ;
+}
+@media(max-width:1000px){
+    body{
+        background-color:white;
+        color: gray;
+    }
+    
+}
+@media(min-width:600px){
+    body{
+        background-color:grey;
+    }
+}
+
+#a{
+    color: hotpink;
+    text-align: center;
+    border: 5px solid;
+    background-color: white;
+    margin: 15px;
+    
+}
+.Myclass{
+    text-align: center;
+    border: 5px solid;
+    border-color: aqua;
+    margin: 15px;
+
+}
+.Boxmodel{
+    text-align: center;
+    color:black;
+    padding: 25px;
+    border: 5px solid;
+    margin: 50px;
+
+}
+.flex{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+input[type="text"]{
+    border: 5px solid;
+}
+input[type="number"]{
+    border-radius: 25px ;
+}
+p[title~="HELLO"]{
+    color: yellow;
+}
+p[lang|="en"]{
+    color: red;
+}
+a[href^="https"]{
+    color: orange;
+}
+a[href$=".com"]{
+    color:greenyellow;
+}
+p[title*="HELLOis"]{
+    color: gold;
+}
+
+
+.Pseudo{
+    #button:hover{
+        background-color: brown;
+        color: blue;
+    }
+    #input:focus{
+        size: 10;
+        background-color: black;
+    }
+}
+
+
+.PseudoElement{
+    font-size: xx-large;
+
+    
+    h4::after{
+        content: "END!";
+        color: brown;
+    }
+    h4::before{
+        content: "HELLO!";
+        color: blue;
+    }
+    
+    p::first-letter{
+        font-size:small;
+        color: crimson;
+    }
+    p::first-line{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    
+}
+.Groupcombining{
+    .a,p{
+        color:orange;
+    }
+    
+    .b p{
+        color:yellow;
+    }
+    
+}
+.font{
+    .q{font-size: 12px;}
+    .w{font-size: 10px;}
+    .e{font-size: 30px;}
+    .r{font-size: 1.5em;}
+}
+.weight{
+    .a{font-weight: lighter;}
+    .b{font-weight: normal;}
+    .c{font-weight: bolder;}
+    .d{font-weight: 900;}
+}

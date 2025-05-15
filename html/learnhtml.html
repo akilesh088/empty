@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #d{
+            border-bottom: 1px solid black;
+            aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: lightgray;
+            }
+        }
+        .Table{
+            text-align: center;
+            table, th,td {
+                border: 1px solid black;
+            }
+            tr:hover{
+                background-color: aqua;
+            }
+        }
+</style>
+    </style>
+</head>
+<body>
+    <div id="d" class="Form" >
+        <form target="_blank" action="/action_page.php">
+            <h1>Basic HTML form</h1>
+            
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+            
+            <label for="id">Employee ID:</label><br>
+            <input type="number" id="text" placeholder="Employee id..." minlength="4"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your emai" required><br>
+
+            <label for="pass">Password:</label><br>
+            <input type="password" name="pass" id="pass"><br>
+            <br>
+            
+            <input type="button" value="Submit"><br>
+            <br>
+        </form>
+
+    </div>
+    <br>
+    <br>
+
+    <div id="d" class="Table" >
+        <h1>Basic HTML Table</h1>
+        <caption>Employee details:</caption>
+        <table style="width: 100%;" >
+            <tr>
+                <th>S.no:</th>
+                <th>Name:</th>
+                <th>ID:</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Akil</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Akil</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Akil</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Akil</td>
+                <td>300</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <br>
+    <br>
+
+
+    <h1>List basic</h1>
+    <div id="d" class="List" style="display: flex;text-align: center; ">
+        
+
+        <div  class="unordered" style="width: 50%;"> 
+            <h3>Unordered List</h3>
+            <ul>
+                <li> Item-1</li>
+                <li> Item-2</li>
+                <li> Item-3</li>
+                <li> Item-4</li>
+                <li> Item-5</li>
+
+            </ul>
+        </div>
+        <div  class="ordered"style="width: 50%; "> 
+            <h3>Ordered list</h3>
+            <ol>
+                <li> Item-1</li>
+                <li> Item-2</li>
+                <li> Item-3</li>
+                <li> Item-4</li>
+                <li> Item-5</li>
+
+            </ol>
+        </div>
+    </div>
+
+    <h1>Basic html layout</h1>
+    <div id="d" class="semantics" style="display:contents;">
+        <header style="font-size:xx-large; background-color: grey;">This is a header part</header>
+        <nav style="display: flex;">
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+
+        <section>
+            <h1>This is an section</h1>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+
+        <article>
+            <h2>This is an article section</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+
+        
+        <footer>
+            This is an footer element
+        </footer>
+    </div>
+    <div id="d" class="media">
+        <h1>Media </h1>
+
+        <p>Image:</p>
+        <img src="https://images.unsplash.com/photo-1699891730676-037bed3c1bed?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blue string" width="500px" height="350px">
+        <br>
+
+        <p>Video:</p>
+        <video width="500px" height="350px">
+            <source src="sun.mp4" type="video/mp4">
+            <source src="sun.ogg" type="video/ogg">
+        </video>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+h1{
+    text-align: center;
+}
+#division{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 24px;
+}
+
+.linear{
+    height: 50vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom ,rgb(0, 255, 195),white);
+    .Top-bottom-left{
+        border-radius: 24px;
+        background: linear-gradient(to bottom left,red,green);
+    }
+    .Top-bottom-right{
+        border-radius: 24px;
+        background: linear-gradient(to bottom right,red,green);
+
+    }
+}
+.radial{
+    height: 50vh;
+    margin: 0;
+    background: radial-gradient(ellipse,blue,snow,red,green);
+}
+.conic{
+    height: 50vh;
+    border-radius: 50%;
+    background:conic-gradient(red,blue,green,pink,red);
+
+}
+
+#box{
+    height: 150px;
+    width: 150px;
+    background-color:blue;
+    
+}
+.Transition{
+    #box1{
+        height: 150px;
+        width: 150px;
+        background-color: brown;
+        
+    }
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    .move:hover{
+        transition-duration: 2s;
+        transform:translate(50px,50px) ;
+    }
+    .scale:hover{
+        transition-duration: 2s;
+        transform:scale(.10);
+    }
+    .rotate:hover{
+        transition-duration: 2s;
+        transform:rotate(360deg);
+    }
+    
+}
+.input{
+    display: flex;
+    height:600px;
+    text-align: start;
+
+    .inp1:focus{
+    border-color: red;
+    outline: none;
+    }
+    .inp1::placeholder{
+        color:blue;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .inp2:read-only{
+        background-color: yellow;
+        border-radius: 5px;
+    }
+    .inp3:disabled{
+        cursor:not-allowed;
+        background-color: black;
+    }
+    .inp4[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+        accent-color: blue;
+    }
+    .inp5[type="file"]{
+        border-width: 5px;
+        border-color: brown;
+    }
+    .inp5[type="file"]:hover{
+        background-color: aquamarine;
+        border-radius: 50px;
+        border-width: 5px;
+        border-color: brown;
+        transform: scale(1.2);
+    }
+    .inp6[type="submit"]:hover{
+        background-color: darkcyan;
+        border-width: 20px;
+        color: white;
+        border: 12px;
+        border-radius: 50px;
+        padding: 20px 20px;
+        font-size: x-large;
+        cursor: pointer;
+    }
+    
+}
+.zindex{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+    background-color:white;
+    text-align: left;
+    
+    #boxx{
+        top: 60px;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        background-color: blue;
+        z-index: 1;
+    }
+    #boxx1{
+        width: 150px;
+        height: 150px;
+        top: 80px;
+        right: 50px;
+        position: absolute;
+        background-color:red;
+        z-index:2;
+    }
+    #img1{
+        width: 250px;
+        left: 250px;
+        top:230px;
+        position: absolute;
+        z-index: 3;
+    }
+    #img2{
+        width: 250px;
+        height: 250px;
+        top: 240px;
+        left: 150px;
+        position: absolute;
+        z-index: 4;
+    }
+   
+    
+}
+.Float-Clear{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    padding: 10px ;
+    text-align: left;
+    align-self: flex-end;
+    #img3{
+        width: 150px;
+        margin-left: 20px;
+        clear:left;
+        float: left;padding: 1px;
+    }
+    #img4{
+        width: 150px;
+        margin-left: 20px;
+        float: left;
+        clear:left;
+    }
+    #boxx{
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        /* z-index: 1; */
+        float: left;
+        clear:left;
+    }
+}
+.FlexContainer{
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+}
+.container{
+    height: 800px;
+    #repeat{
+        width: 400px;
+        height: 200px;
+        background-image:url('') ;
+        background-repeat: repeat;
+    }
+    #norepeat{
+        width: 400px;
+        height: 200px;
+        background-image:url('') ;
+        background-repeat: no-repeat;
+    }
+    #repeat-x{
+        width: 400px;
+        height: 200px;
+        background-image:url('') ;
+        background-repeat: repeat-x;
+    }
+    #repeat-y{
+        width: 400px;
+        height: 200px;
+        background-image:url('') ;
+        background-repeat: repeat-y;
+    }
+}
