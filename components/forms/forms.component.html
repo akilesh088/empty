@@ -1,0 +1,13 @@
+
+<div class="form">
+    <h1>Forms:</h1>
+    <form #user="ngForm" (ngSubmit)="submit(user.value)">
+        <label for="name">Nmae:</label>
+        <input type="text" id="name" name="username" placeholder="enter your name" 
+        ngModel required>
+
+        <input type="submit" class="btn" value="submit"  [disabled]="!user.valid">
+    </form>
+    <p *ngIf="submitted">{{username}}</p>
+</div>
+
