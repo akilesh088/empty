@@ -1,0 +1,73 @@
+<div class="AttributeDirective">
+   <h1>Attribute Directive</h1>
+   <div>
+      <h1 class="h1">Ng style:</h1>
+      <p [ngStyle]="{'color': 'blue', 'font-size': '25px'}"> 
+         paragraph style is applied using ngStyle
+      </p>
+   </div>
+
+
+   <div>
+      <div [ngClass]="dark"> <h1>Hello There</h1></div>
+      
+      <button (click)="changeColor()">Right</button>
+      
+      <button (click)="changeColor1()">Wrong</button>
+   </div>
+
+
+   <div>
+      <h1>NgModel</h1>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="name">
+      <h2>Hello:{{name}}</h2>
+   
+   </div>
+</div>
+
+<div class="StructuralDirective">
+   <h1>structural Directive</h1>
+   <div class="ngif">
+      <h1>NgIf</h1>
+      <div *ngIf="hidden" class="box">
+         <p>Ng IF</p>
+      </div><br>
+      <button (click)="show()">show</button>
+   </div>
+
+   <div class="ngifelse">
+      <h1>NgIfElse</h1>
+      
+      <div *ngIf="sho; else div2" >
+         <div class="box2"><p>If</p></div>
+      </div>
+      <ng-template #div2><div id="div2">
+         <p>Else</p>
+      </div></ng-template><br>
+
+      <button (click)="show2()">show</button>
+   </div>
+
+   <div class="ngFor">
+      <h1>NgFor</h1>
+      <ul>
+         <li *ngFor="let s of students; trackBy:index">
+            {{s.name}}-{{s.id}}
+         </li>
+      </ul>
+   </div>
+
+   <div class="ngSwitch">
+      <h1>NgSwitch</h1>
+      <div  [ngSwitch]="col" >
+         <div class="switchCol" *ngSwitchCase="'red'"   [ngStyle]="{'background-color':col}">Red </div>
+         <div class="switchCol" *ngSwitchCase="'green'" [ngStyle]="{'background-color':col}">Green </div>
+         <div class="switchCol" *ngSwitchCase="'blue'"  [ngStyle]="{'background-color':col}">Blue </div>
+      </div>
+   </div>
+
+</div>
+
+

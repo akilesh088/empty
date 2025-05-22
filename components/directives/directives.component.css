@@ -1,0 +1,80 @@
+h1{
+    color: cadetblue;
+}
+
+
+.AttributeDirective{
+    border: 2px solid black;
+    padding-left:20px;
+    margin-bottom: 2px;
+    
+    .right{
+        background-color:green;
+        color: white;
+    }
+    .wrong{
+        background-color: red;
+        color:white;
+    }
+}
+
+.StructuralDirective{
+    border: 2px solid black;
+    padding-left:20px;
+    margin-bottom: 2px;
+    .ngif{
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            color: white;
+            border-radius: 24px;
+            font-size:xx-large;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+    .ngifelse{
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            color: white;
+            border-radius: 24px;
+            font-size:xx-large;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            color: white;
+            border-radius: 24px;
+            font-size:xx-large;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+    .ngFor{
+        font-size: xx-large;
+        color: brown;
+    }
+    .switchCol{
+        width: 200px;
+        height: 200px;
+        color: white;
+        border-radius: 24px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
