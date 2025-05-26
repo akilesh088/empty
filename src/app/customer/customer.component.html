@@ -1,0 +1,11 @@
+<p>customer works!</p>
+<!-- <h1>{{name | async }}</h1> -->
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" />
+  <button type="submit">Submit</button>
+</form>
+
+<p>Stored Name: {{ storedName$ }}</p>
