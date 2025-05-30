@@ -1,0 +1,17 @@
+<div class="center-container">
+  <h1>Add Person:</h1>
+<form [formGroup]="personForm" (ngSubmit)="editingPersonId ? updatePerson() : addPerson()">
+  <input formControlName="name" placeholder="Name" />
+  <button type="submit">{{ editingPersonId ? 'Update' : 'Add' }}</button>
+  <button type="button" (click)="cancelEdit()" *ngIf="editingPersonId">Cancel</button>
+</form>
+<h3>Person List:</h3>
+<ul>
+  <li *ngFor="let person of persons$ | async">
+    {{ person.name }}
+    <button (click)="editPerson(person)">Edit</button>
+    <button (click)="deletePerson(person.id)">Delete</button>
+  </li>
+</ul>
+
+</div>
